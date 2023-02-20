@@ -129,8 +129,8 @@ gpminder %>%
   summarize(co2_pc = mean(co2_PC, na.rm = TRUE)) %>%
   na.omit() %>%
   filter(time %in% c(1960, 2016)) %>%
-  ggplot(aes(x=region, y=co2_pc, fill=factor(time))) + 
-  geom_col(position = position_dodge(), color="black") +
+  ggplot(aes(x = region, y = co2_pc, fill = factor(time))) + 
+  geom_col(position = position_dodge(), color = "black") +
   labs(y = "Average CO2 per capita", 
        x = "Continent",
        y = "Year",
@@ -218,7 +218,7 @@ gpminder %>%
 gpminder %>% 
   filter(!is.na(name)) %>% 
   group_by(time) %>% 
-  mutate(rank=rank(-lifeExpectancy)) %>%
+  mutate(rank = rank(-lifeExpectancy)) %>%
   filter(time %in% c(1960, 2019), name == "United States of America") %>% 
   select(time, rank)
 ```
@@ -234,3 +234,4 @@ gpminder %>%
   select(time, relative_rank)
 ```
 
+### It takes me four hours to finish this PS.
