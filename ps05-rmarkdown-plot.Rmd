@@ -66,7 +66,7 @@ gpminder %>%
 more_iso3 <- unique(gpminder[is.na(gpminder$name), ]$iso3)
 more_iso3
 ```
-It has 4 iso3-code when the name is mission. Four countries are Chanisl, GBM, KOS, and NLD_CURACAO.
+Four countries are Chanisl, GBM, KOS, and NLD_CURACAO.
 
 ### Q3
 ```{r}
